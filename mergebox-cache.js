@@ -48,7 +48,7 @@ function hasField(doc, field) {
 		}
 		doc = doc[field[i]];
 		// return true even if the field is falsy
-		if (!doc[field[i]]) {
+		if (!doc) {
 			return typeof doc != 'undefined';
 		}
 	}

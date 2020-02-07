@@ -1,6 +1,6 @@
 Package.describe({
   name: 'wildhart:mergebox-cache',
-  version: '0.0.2',
+  version: '0.0.3',
   summary: 'https://github.com/wildhart/meteor.mergebox-cache',
   git: 'https://github.com/wildhart/meteor.mergebox-cache',
   documentation: 'README.md'
