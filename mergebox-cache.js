@@ -46,13 +46,14 @@ function hasField(doc, field) {
 			}
 			doc = doc[0];
 		}
-		if (!doc[field[i]]) {
-			return;
-		}
 		doc = doc[field[i]];
+		// return true even if the field is falsy
+		if (!doc[field[i]]) {
+			return typeof doc != 'undefined';
+		}
 	}
 
-	return !!doc;
+	return typeof doc != 'undefined';
 }
 
 Mongo.Collection.prototype.findOneOriginal = Mongo.Collection.prototype.findOne;
